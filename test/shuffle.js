@@ -28,7 +28,7 @@ test('quick', function(t) {
   var xs = [];
   for (var i = 0; i < 1e5; i++) {
     xs.push((new Alea(uuid.v4()))());
-  };
+  }
 
   var t0 = Date.now();
   var xs_ = deck.shuffle(xs);
