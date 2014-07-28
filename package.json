@@ -1,0 +1,38 @@
+{
+  "name": "alea-deck",
+  "version": "0.0.0",
+  "description": "Uniform and weighted shuffling and sampling with Alea",
+  "keywords": [
+    "alea",
+    "math",
+    "random"
+  ],
+  "repository": "KenanY/alea-deck",
+  "license": "MIT",
+  "author": "Kenan Yildirim <kenan@kenany.me> (http://kenany.me/)",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "LICENSE.txt"
+  ],
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "dependencies": {
+    "alea": "^0.0.9",
+    "lodash.isarray": "^2.4.1",
+    "lodash.isnumber": "^2.4.1",
+    "lodash.isplainobject": "^2.4.1",
+    "lodash.keys": "^2.4.1",
+    "lodash.reduce": "^2.4.1"
+  },
+  "devDependencies": {
+    "lodash.every": "^2.4.1",
+    "lodash.isundefined": "^2.4.1",
+    "lodash.map": "^2.4.1",
+    "tape": "^2.13.4"
+  }
+}
