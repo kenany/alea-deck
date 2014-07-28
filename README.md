@@ -1,6 +1,7 @@
 # alea-deck
 
 [![build status](https://img.shields.io/travis/KenanY/alea-deck.svg)](https://travis-ci.org/KenanY/alea-deck)
+[![dependency status](https://img.shields.io/gemnasium/KenanY/alea-deck.svg)](https://gemnasium.com/KenanY/alea-deck)
 
 Uniform and weighted shuffling and sampling, just like
 [deck](https://github.com/substack/node-deck), but utilizing
