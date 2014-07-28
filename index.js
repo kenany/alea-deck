@@ -9,7 +9,7 @@ var uuid = require('node-uuid');
 function deck(xs) {
   if (!isArray(xs) && !isPlainObject(xs)) {
     throw new TypeError('Must be an Array or an Object');
-  };
+  }
 
   return reduce(keys(module.exports), function(acc, name) {
     acc[name] = module.exports[name].bind(null, xs);
@@ -67,7 +67,7 @@ function pick(xs) {
       threshold += weights[keyz[i]];
       if (n < threshold) {
         return keyz[i];
-      };
+      }
     }
     throw new Error('Exceeded threshold. Something is very wrong.');
   }
@@ -105,7 +105,7 @@ function normalize(weights) {
         acc[key] = weights[key] / total;
         return acc;
       }, {});
-};
+}
 
 module.exports = deck;
 module.exports.shuffle = shuffle;
