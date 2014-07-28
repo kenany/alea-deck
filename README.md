@@ -1,5 +1,7 @@
 # alea-deck
 
+[![build status](https://img.shields.io/travis/KenanY/alea-deck.svg)](https://travis-ci.org/KenanY/alea-deck)
+
 Uniform and weighted shuffling and sampling, just like
 [deck](https://github.com/substack/node-deck), but utilizing
 [Alea](https://github.com/coverslide/node-alea) instead of `Math.random`.
