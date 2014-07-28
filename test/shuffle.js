@@ -4,6 +4,7 @@ var every = require('lodash.every');
 var reduce = require('lodash.reduce');
 var keys = require('lodash.keys');
 var Alea = require('alea');
+var uuid = require('node-uuid');
 
 function shuffler(fn, t) {
   var xs = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -26,13 +27,13 @@ test('quick', function(t) {
 
   var xs = [];
   for (var i = 0; i < 1e5; i++) {
-    xs.push((new Alea())())
+    xs.push((new Alea(uuid.v4()))());
   };
 
   var t0 = Date.now();
   var xs_ = deck.shuffle(xs);
   var elapsed = Date.now() - t0;
-  t.ok(elapsed < 800);
+  t.ok(elapsed < 1000);
   t.equal(xs.length, 1e5);
 });
 
@@ -68,8 +69,8 @@ test('weighted shuffle', function(t) {
       keys.shift();
       return p_;
     }, loops);
-    t.ok(counts[key] >= 0.80 * expected);
-    t.ok(counts[key] <= 1.20 * expected);
+    t.ok(counts[key] >= 0.95 * expected);
+    t.ok(counts[key] <= 1.05 * expected);
   }
 
   every(keys(counts), margins);

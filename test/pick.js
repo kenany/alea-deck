@@ -17,10 +17,9 @@ function picker(fn, t) {
     return +x;
   }), xs);
   t.deepEqual(xs, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
-  console.log(JSON.stringify(counts));
   xs.forEach(function(x) {
-    t.ok(counts[x] * xs.length >= loops * 0.75);
-    t.ok(counts[x] * xs.length <= loops * 1.25);
+    t.ok(counts[x] * xs.length >= loops * 0.95);
+    t.ok(counts[x] * xs.length <= loops * 1.05);
   });
 }
 
@@ -54,8 +53,8 @@ test('weighted pick', function(t) {
   t.deepEqual(keys(counts).sort(), ['a', 'b', 'c']);
 
   keys(weights).forEach(function(key) {
-    t.ok(counts[key] / weights[key] * total >= loops * 0.80);
-    t.ok(counts[key] / weights[key] * total <= loops * 1.20);
+    t.ok(counts[key] / weights[key] * total >= loops * 0.95);
+    t.ok(counts[key] / weights[key] * total <= loops * 1.05);
   });
 
   t.throws(function() {
