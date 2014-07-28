@@ -28,7 +28,7 @@
     "lodash.isplainobject": "^2.4.1",
     "lodash.keys": "^2.4.1",
     "lodash.reduce": "^2.4.1",
-    "node-uuid": "^1.4.1"
+    "node-uuid": "KenanY/node-uuid"
   },
   "devDependencies": {
     "lodash.every": "^2.4.1",
