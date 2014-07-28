@@ -78,7 +78,7 @@ function pick(xs) {
 
 function normalize(weights) {
   if (!isPlainObject(weights)) {
-    throw 'Not an Object'
+    throw 'Not an Object';
   }
 
   var keyz = keys(weights);

@@ -12,7 +12,7 @@ function shuffler(fn, t) {
   t.deepEqual(xs, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
   t.equal(xs.length, 10);
   t.ok(every(xs, function(x) {
-    return xs_.indexOf(x) >= 0
+    return xs_.indexOf(x) >= 0;
   }));
 }
 
@@ -41,7 +41,7 @@ test('shuffle object', function(t) {
   t.plan(3);
 
   shuffler(function(xs) {
-    return deck(xs).shuffle()
+    return deck(xs).shuffle();
   }, t);
 });
 
