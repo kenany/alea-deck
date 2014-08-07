@@ -33,7 +33,7 @@ test('quick', function(t) {
   var t0 = Date.now();
   var xs_ = deck.shuffle(xs);
   var elapsed = Date.now() - t0;
-  t.ok(elapsed < 1000);
+  t.ok(elapsed < 1100);
   t.equal(xs.length, 1e5);
 });
 
