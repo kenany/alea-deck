@@ -1,10 +1,9 @@
-var Alea = require('alea');
+var random = require('alea-random');
 var isArray = require('lodash.isarray');
 var isPlainObject = require('lodash.isplainobject');
 var keys = require('lodash.keys');
 var reduce = require('lodash.reduce');
 var isNumber = require('lodash.isnumber');
-var uuid = require('node-uuid');
 
 function deck(xs) {
   if (!isArray(xs) && !isPlainObject(xs)) {
@@ -21,7 +20,7 @@ function shuffle(xs) {
   if (isArray(xs)) {
     var res = xs.slice();
     for (var i = res.length - 1; i >= 0; i--) {
-      var n = Math.floor((new Alea(uuid.v4()))() * i);
+      var n = Math.floor(random(true) * i);
       var t = res[i];
       res[i] = res[n];
       res[n] = t;
@@ -51,7 +50,7 @@ function shuffle(xs) {
 
 function pick(xs) {
   if (isArray(xs)) {
-    return xs[Math.floor((new Alea(uuid.v4()))() * xs.length)];
+    return xs[Math.floor(random(true) * xs.length)];
   }
   else if (isPlainObject(xs)) {
     var weights = normalize(xs);
@@ -59,7 +58,7 @@ function pick(xs) {
       return undefined;
     }
 
-    var n = (new Alea(uuid.v4()))();
+    var n = random(true);
     var threshold = 0;
     var keyz = keys(weights);
 

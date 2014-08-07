@@ -22,13 +22,12 @@
     "test": "tape test/*.js"
   },
   "dependencies": {
-    "alea": "^0.0.9",
+    "alea-random": "^1.1.1",
     "lodash.isarray": "^2.4.1",
     "lodash.isnumber": "^2.4.1",
     "lodash.isplainobject": "^2.4.1",
     "lodash.keys": "^2.4.1",
-    "lodash.reduce": "^2.4.1",
-    "node-uuid": "KenanY/node-uuid"
+    "lodash.reduce": "^2.4.1"
   },
   "devDependencies": {
     "lodash.every": "^2.4.1",
