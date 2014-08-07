@@ -3,8 +3,6 @@ var test = require('tape');
 var every = require('lodash.every');
 var reduce = require('lodash.reduce');
 var keys = require('lodash.keys');
-var Alea = require('alea');
-var uuid = require('node-uuid');
 
 function shuffler(fn, t) {
   var xs = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -27,7 +25,7 @@ test('quick', function(t) {
 
   var xs = [];
   for (var i = 0; i < 1e5; i++) {
-    xs.push((new Alea(uuid.v4()))());
+    xs.push(Math.random());
   }
 
   var t0 = Date.now();
