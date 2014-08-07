@@ -7,7 +7,6 @@ test('normalize', function(t) {
   t.deepEqual(
     deck.normalize({a: 1, b: 3, c: 4}),
     {a: 0.125, b: 0.375, c: 0.5}
-
   );
 
   var total = 0.1 + 0.2 + 0.05;
