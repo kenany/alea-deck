@@ -33,6 +33,6 @@
     "lodash.every": "^2.4.1",
     "lodash.isundefined": "^2.4.1",
     "lodash.map": "^2.4.1",
-    "tape": "^2.13.4"
+    "tape": "^3.0.3"
   }
 }
