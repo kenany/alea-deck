@@ -20,7 +20,7 @@ test('shuffle', function(t) {
   shuffler(deck.shuffle, t);
 });
 
-test('quick', function(t) {
+test('not-so-quick', function(t) {
   t.plan(2);
 
   var xs = [];
@@ -31,7 +31,7 @@ test('quick', function(t) {
   var t0 = Date.now();
   var xs_ = deck.shuffle(xs);
   var elapsed = Date.now() - t0;
-  t.ok(elapsed < 1100);
+  t.ok(elapsed < 1600);
   t.equal(xs.length, 1e5);
 });
 
