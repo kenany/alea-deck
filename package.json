@@ -23,7 +23,6 @@
   },
   "dependencies": {
     "alea-random": "^2.0.0",
-    "lodash.isarray": "^3.0.0",
     "lodash.isnumber": "^3.0.0",
     "lodash.isplainobject": "^3.0.0",
     "lodash.keys": "^3.0.4",
