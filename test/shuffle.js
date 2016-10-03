@@ -20,21 +20,6 @@ test('shuffle', function(t) {
   shuffler(deck.shuffle, t);
 });
 
-test('not-so-quick', function(t) {
-  t.plan(2);
-
-  var xs = [];
-  for (var i = 0; i < 1e5; i++) {
-    xs.push(Math.random());
-  }
-
-  var t0 = Date.now();
-  var xs_ = deck.shuffle(xs);
-  var elapsed = Date.now() - t0;
-  t.ok(elapsed < 1600);
-  t.equal(xs.length, 1e5);
-});
-
 test('shuffle object', function(t) {
   t.plan(3);
 
