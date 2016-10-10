@@ -34,7 +34,6 @@ test('weighted shuffle', function(t) {
   t.deepEqual(deck.shuffle({a: 1000, b: 0.01}), ['a', 'b']);
 
   var weights = {a: 3, b: 1, c: 10};
-  var total = 3 + 1 + 10;
   var loops = 5000;
 
   var counts = {};

@@ -76,7 +76,7 @@ function pick(xs) {
 
 function normalize(weights) {
   if (!isPlainObject(weights)) {
-    throw 'Not an Object';
+    throw new TypeError('`weights` must be an object');
   }
 
   var keyz = keys(weights);
@@ -100,9 +100,9 @@ function normalize(weights) {
   return total === 1
     ? weights
     : reduce(keyz, function(acc, key) {
-        acc[key] = weights[key] / total;
-        return acc;
-      }, {});
+      acc[key] = weights[key] / total;
+      return acc;
+    }, {});
 }
 
 module.exports = deck;

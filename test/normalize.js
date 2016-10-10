@@ -19,3 +19,15 @@ test('normalize', function(t) {
     deck.normalize({a: 0.1, b: 0.2, c: []});
   });
 });
+
+test('normalize: throws for non-objects', (t) => {
+  var NONOBJECTS = ['', true, false, [], 3, NaN, null, undefined];
+
+  t.plan(NONOBJECTS.length);
+
+  NONOBJECTS.forEach((no) => {
+    t.throws(() => {
+      deck.normalize(no);
+    });
+  });
+});
