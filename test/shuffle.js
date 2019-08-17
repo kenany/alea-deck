@@ -31,9 +31,9 @@ test('shuffle object', function(t) {
 test('weighted shuffle', function(t) {
   t.plan(4);
 
-  t.deepEqual(deck.shuffle({a: 1000, b: 0.01}), ['a', 'b']);
+  t.deepEqual(deck.shuffle({ a: 1000, b: 0.01 }), ['a', 'b']);
 
-  var weights = {a: 3, b: 1, c: 10};
+  var weights = { a: 3, b: 1, c: 10 };
   var loops = 5000;
 
   var counts = {};
@@ -58,6 +58,6 @@ test('weighted shuffle', function(t) {
   every(keys(counts), margins);
 
   t.throws(function() {
-    deck.shuffle({a: 1, b: 'x', c: 5});
+    deck.shuffle({ a: 1, b: 'x', c: 5 });
   });
 });

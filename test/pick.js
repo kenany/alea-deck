@@ -41,7 +41,7 @@ test('weighted pick', function(t) {
   t.plan(8);
 
   var counts = {};
-  var weights = {a: 2, b: 10, c: 1};
+  var weights = { a: 2, b: 10, c: 1 };
   var total = 2 + 10 + 1;
   var loops = 50000;
 
@@ -58,7 +58,7 @@ test('weighted pick', function(t) {
   });
 
   t.throws(function() {
-    deck.pick({a: 5, b: 2, c: /moo/});
+    deck.pick({ a: 5, b: 2, c: /moo/ });
   });
 });
 
