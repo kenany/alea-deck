@@ -30,12 +30,12 @@
     "lodash.reduce": "^4.6.0"
   },
   "devDependencies": {
-    "@kenan/eslint-config": "^4.0.0",
+    "@kenan/eslint-config": "4.0.0",
     "@kenan/renovate-config": "1.1.1",
-    "eslint": "^3.7.0",
-    "lodash.every": "^4.6.0",
-    "lodash.isundefined": "^3.0.0",
-    "lodash.map": "^4.6.0",
-    "tape": "^4.2.2"
+    "eslint": "3.19.0",
+    "lodash.every": "4.6.0",
+    "lodash.isundefined": "3.0.1",
+    "lodash.map": "4.6.0",
+    "tape": "4.11.0"
   }
 }
