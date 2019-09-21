@@ -1,8 +1,9 @@
-var deck = require('../');
 var test = require('tape');
 var every = require('lodash.every');
 var reduce = require('lodash.reduce');
 var keys = require('lodash.keys');
+
+var deck = require('../');
 
 function shuffler(fn, t) {
   var xs = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];

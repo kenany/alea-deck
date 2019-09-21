@@ -1,5 +1,6 @@
-var deck = require('../');
 var test = require('tape');
+
+var deck = require('../');
 
 test('normalize', function(t) {
   t.plan(3);
