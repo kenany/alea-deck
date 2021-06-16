@@ -31,7 +31,7 @@
     "lodash.reduce": "^4.6.0"
   },
   "devDependencies": {
-    "@kenan/eslint-config": "^8.0.4",
+    "@kenan/eslint-config": "^9.0.3",
     "@kenan/renovate-config": "^1.5.0",
     "eslint": "^7.28.0",
     "lodash.every": "4.6.0",
