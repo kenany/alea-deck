@@ -33,7 +33,7 @@
   "devDependencies": {
     "@kenan/eslint-config": "^9.0.3",
     "@kenan/renovate-config": "^1.5.0",
-    "eslint": "^7.28.0",
+    "eslint": "^7.32.0",
     "lodash.every": "4.6.0",
     "lodash.isundefined": "3.0.1",
     "lodash.map": "4.6.0",
