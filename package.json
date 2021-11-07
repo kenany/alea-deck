@@ -24,7 +24,7 @@
     "posttest": "npm run lint"
   },
   "dependencies": {
-    "alea-random": "^2.1.5",
+    "alea-random": "^2.1.6",
     "lodash.isnumber": "^3.0.3",
     "lodash.isplainobject": "^4.0.6",
     "lodash.keys": "^4.2.0",
