@@ -9,7 +9,7 @@
   ],
   "repository": "KenanY/alea-deck",
   "license": "MIT",
-  "author": "Kenan Yildirim <kenan@kenany.me> (http://kenany.me/)",
+  "author": "Kenan Yildirim <kenan@kenany.me> (https://kenany.me/)",
   "main": "index.js",
   "files": [
     "index.js",
@@ -18,10 +18,14 @@
   "directories": {
     "test": "test"
   },
+  "engines": {
+    "node": "10 || 12 || 14 || >=16"
+  },
   "scripts": {
     "lint": "eslint *.js test/*.js",
     "test": "tape test/*.js",
-    "posttest": "npm run lint"
+    "posttest": "npm run lint",
+    "release": "semantic-release"
   },
   "dependencies": {
     "alea-random": "^2.1.6",
@@ -33,10 +37,14 @@
   "devDependencies": {
     "@kenan/eslint-config": "^9.0.4",
     "@kenan/renovate-config": "^1.5.1",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "conventional-changelog-conventionalcommits": "^4.6.1",
     "eslint": "^7.32.0",
-    "lodash.every": "4.6.0",
-    "lodash.isundefined": "3.0.1",
-    "lodash.map": "4.6.0",
+    "lodash.every": "^4.6.0",
+    "lodash.isundefined": "^3.0.1",
+    "lodash.map": "^4.6.0",
+    "semantic-release": "^18.0.1",
     "tape": "^5.3.1"
   }
 }
