@@ -1,3 +1,19 @@
+## [3.0.0](https://github.com/KenanY/alea-deck/compare/2.0.1...3.0.0) (2022-02-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* Node.js v10 is no longer supported.
+
+### Features
+
+* drop Node.js v10 support ([1fe2404](https://github.com/KenanY/alea-deck/commit/1fe24047e28f25581855f6876e44d7d24c9f4fd1))
+
+
+### Bug Fixes
+
+* **deps:** alea-random@3.0.0 ([bd65bc2](https://github.com/KenanY/alea-deck/commit/bd65bc273154a2c4c67342cf516824b68ec6ccb0))
+
 ### [2.0.1](https://github.com/KenanY/alea-deck/compare/2.0.0...2.0.1) (2021-12-21)
 
 
