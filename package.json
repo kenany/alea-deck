@@ -36,10 +36,9 @@
   },
   "devDependencies": {
     "@kenan/eslint-config": "^9.0.4",
-    "@kenan/renovate-config": "^1.5.1",
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/git": "^10.0.1",
-    "conventional-changelog-conventionalcommits": "^4.6.1",
+    "conventional-changelog-conventionalcommits": "^4.6.3",
     "eslint": "^7.32.0",
     "lodash.every": "^4.6.0",
     "lodash.isundefined": "^3.0.1",
