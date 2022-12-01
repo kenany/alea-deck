@@ -1,3 +1,14 @@
+## [4.0.0](https://github.com/KenanY/alea-deck/compare/3.0.0...4.0.0) (2022-12-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* Node.js v12 is no longer supported.
+
+### Features
+
+* drop Node.js v12 support ([b1b80ac](https://github.com/KenanY/alea-deck/commit/b1b80ac56c7e32f9d69aeee9f51e490917e2d8b4))
+
 ## [3.0.0](https://github.com/KenanY/alea-deck/compare/2.0.1...3.0.0) (2022-02-03)
 
 
