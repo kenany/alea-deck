@@ -1,6 +1,6 @@
-var test = require('tape');
+const test = require('tape');
 
-var deck = require('../');
+const deck = require('../');
 
 test('normalize', function(t) {
   t.plan(3);
@@ -10,7 +10,7 @@ test('normalize', function(t) {
     { a: 0.125, b: 0.375, c: 0.5 }
   );
 
-  var total = 0.1 + 0.2 + 0.05;
+  const total = 0.1 + 0.2 + 0.05;
   t.deepEqual(
     deck.normalize({ a: 0.1, b: 0.2, c: 0.05 }),
     { a: 0.1 / total, b: 0.2 / total, c: 0.05 / total }
@@ -22,7 +22,7 @@ test('normalize', function(t) {
 });
 
 test('normalize: throws for non-objects', (t) => {
-  var NONOBJECTS = ['', true, false, [], 3, NaN, null, undefined];
+  const NONOBJECTS = ['', true, false, [], 3, NaN, null, undefined];
 
   t.plan(NONOBJECTS.length);
 

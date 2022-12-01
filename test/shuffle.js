@@ -1,13 +1,13 @@
-var test = require('tape');
-var every = require('lodash.every');
-var reduce = require('lodash.reduce');
-var keys = require('lodash.keys');
+const test = require('tape');
+const every = require('lodash.every');
+const reduce = require('lodash.reduce');
+const keys = require('lodash.keys');
 
-var deck = require('../');
+const deck = require('../');
 
 function shuffler(fn, t) {
-  var xs = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-  var xs_ = fn(xs);
+  const xs = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+  const xs_ = fn(xs);
   t.deepEqual(xs, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
   t.equal(xs.length, 10);
   t.ok(every(xs, function(x) {
@@ -34,19 +34,19 @@ test('weighted shuffle', function(t) {
 
   t.deepEqual(deck.shuffle({ a: 1000, b: 0.01 }), ['a', 'b']);
 
-  var weights = { a: 3, b: 1, c: 10 };
-  var loops = 5000;
+  const weights = { a: 3, b: 1, c: 10 };
+  const loops = 5000;
 
-  var counts = {};
-  for (var i = 0; i < loops; i++) {
-    var x = deck.shuffle(weights).join('');
+  const counts = {};
+  for (let i = 0; i < loops; i++) {
+    const x = deck.shuffle(weights).join('');
     counts[x] = (counts[x] || 0) + 1;
   }
 
   function margins(key) {
-    var keys = key.split('');
-    var expected = reduce(key.split(''), function(p, x) {
-      var p_ = p * weights[x] / reduce(keys, function(acc, k) {
+    const keys = key.split('');
+    const expected = reduce(key.split(''), function(p, x) {
+      const p_ = p * weights[x] / reduce(keys, function(acc, k) {
         return acc + weights[k];
       }, 0);
       keys.shift();

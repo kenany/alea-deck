@@ -1,17 +1,17 @@
-var test = require('tape');
-var keys = require('lodash.keys');
-var isUndefined = require('lodash.isundefined');
-var map = require('lodash.map');
+const test = require('tape');
+const keys = require('lodash.keys');
+const isUndefined = require('lodash.isundefined');
+const map = require('lodash.map');
 
-var deck = require('../');
+const deck = require('../');
 
 function picker(fn, t) {
-  var xs = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-  var counts = {};
-  var loops = 50000;
+  const xs = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+  const counts = {};
+  const loops = 50000;
 
-  for (var i = 0; i < loops; i++) {
-    var x = fn(xs);
+  for (let i = 0; i < loops; i++) {
+    const x = fn(xs);
     counts[x] = (counts[x] || 0) + 1;
   }
   t.deepEqual(map(keys(counts).sort(), function(x) {
@@ -41,13 +41,13 @@ test('pick object', function(t) {
 test('weighted pick', function(t) {
   t.plan(8);
 
-  var counts = {};
-  var weights = { a: 2, b: 10, c: 1 };
-  var total = 2 + 10 + 1;
-  var loops = 50000;
+  const counts = {};
+  const weights = { a: 2, b: 10, c: 1 };
+  const total = 2 + 10 + 1;
+  const loops = 50000;
 
-  for (var i = 0; i < loops; i++) {
-    var x = deck.pick(weights);
+  for (let i = 0; i < loops; i++) {
+    const x = deck.pick(weights);
     counts[x] = (counts[x] || 0) + 1;
   }
 
