@@ -1,3 +1,10 @@
+## [4.0.1](https://github.com/KenanY/alea-deck/compare/4.0.0...4.0.1) (2022-12-26)
+
+
+### Bug Fixes
+
+* **deps:** alea-random@4.0.1 ([9a3a60f](https://github.com/KenanY/alea-deck/commit/9a3a60f7d0ea24a13a4925050ff3d9da8be150f5))
+
 ## [4.0.0](https://github.com/KenanY/alea-deck/compare/3.0.0...4.0.0) (2022-12-01)
 
 
