@@ -39,7 +39,7 @@
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "conventional-changelog-conventionalcommits": "^5.0.0",
-    "eslint": "^8.38.0",
+    "eslint": "^8.39.0",
     "lodash.every": "^4.6.0",
     "lodash.isundefined": "^3.0.1",
     "lodash.map": "^4.6.0",
