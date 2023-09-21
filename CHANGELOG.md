@@ -1,3 +1,10 @@
+## [4.1.0](https://github.com/kenany/alea-deck/compare/4.0.1...4.1.0) (2023-09-21)
+
+
+### Features
+
+* drop Node.js v14 and v16 ([69120ce](https://github.com/kenany/alea-deck/commit/69120ce67a00ab644d64d5a42f7b71dbb88a6a4f))
+
 ## [4.0.1](https://github.com/KenanY/alea-deck/compare/4.0.0...4.0.1) (2022-12-26)
 
 
