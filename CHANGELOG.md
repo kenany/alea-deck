@@ -1,3 +1,9 @@
+## [4.1.2](https://github.com/kenany/alea-deck/compare/4.1.1...4.1.2) (2024-07-11)
+
+### Bug Fixes
+
+* **deps:** alea-random@5.0.2 ([a208e05](https://github.com/kenany/alea-deck/commit/a208e05016c0a079867bef83f21a8e6ff9b0da5f))
+
 ## [4.1.1](https://github.com/kenany/alea-deck/compare/4.1.0...4.1.1) (2023-10-23)
 
 

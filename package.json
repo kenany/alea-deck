@@ -1,6 +1,6 @@
 {
   "name": "alea-deck",
-  "version": "4.1.1",
+  "version": "4.1.2",
   "description": "Uniform and weighted shuffling and sampling with Alea",
   "keywords": [
     "alea",
