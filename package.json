@@ -44,6 +44,6 @@
     "lodash.isundefined": "^3.0.1",
     "lodash.map": "^4.6.0",
     "semantic-release": "^24.1.2",
-    "tape": "^5.8.1"
+    "tape": "^5.9.0"
   }
 }
