@@ -28,7 +28,7 @@
     "release": "semantic-release"
   },
   "dependencies": {
-    "alea-random": "^5.0.3",
+    "alea-random": "^5.0.4",
     "lodash.isnumber": "^3.0.3",
     "lodash.isplainobject": "^4.0.6",
     "lodash.keys": "^4.2.0",
