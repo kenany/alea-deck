@@ -7,15 +7,15 @@ Uniform and weighted shuffling and sampling, just like
 ## Example
 
 ``` javascript
-var deck = require('alea-deck');
+import { shuffle, pick } from 'alea-deck';
 
-deck.shuffle([1, 2, 3, 4]);
+shuffle([1, 2, 3, 4]);
 // => [1, 4, 2, 3]
 
-deck.pick([1, 2, 3, 4]);
+pick([1, 2, 3, 4]);
 // => 2
 
-deck.shuffle({
+shuffle({
   a: 10,
   b: 8,
   c: 2,
@@ -24,7 +24,7 @@ deck.shuffle({
 });
 // => ['b', 'a', 'c', 'd', 'e']
 
-deck.pick({
+pick({
   a: 10,
   b: 8,
   c: 2,
@@ -43,10 +43,22 @@ $ npm install alea-deck
 ## API
 
 ``` javascript
-var deck = require('alea-deck');
+import { deck, shuffle, pick, normalize } from 'alea-deck';
 ```
 
-### `deck.shuffle(collection)`
+### `deck(collection)`
+
+Binds `shuffle` and `pick` to `collection`, returning an object with both
+methods pre-applied.
+
+``` javascript
+const d = deck([1, 2, 3, 4]);
+
+d.shuffle(); // => [3, 1, 4, 2]
+d.pick();    // => 3
+```
+
+### `shuffle(collection)`
 
 If `collection` is an _Array_, returns a new shuffled _Array_ based on a unifrom
 distributionm without mutating the original _Array_.
@@ -54,7 +66,7 @@ distributionm without mutating the original _Array_.
 Otherwise, if `collection` is an _Object_, returns a new shuffled _Array_ of
 `collection`'s visible keys based on the value weights of `collection`.
 
-### `deck.pick(collection)`
+### `pick(collection)`
 
 Samples `collection` without mutating `collection`.
 
@@ -64,7 +76,7 @@ uniform distribution.
 Otherwise, if `collection` is an _Object_, returns a random key from
 `collection` biased by its normalized value.
 
-### `deck.normalize(obj)`
+### `normalize(obj)`
 
 Return a new `obj` _Object_ where the values have been divided by the sum of all
 the values such that the sum of all the values in the returned _Object_ is 1.
