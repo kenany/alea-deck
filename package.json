@@ -49,7 +49,7 @@
     "prepare": "pnpm build"
   },
   "dependencies": {
-    "@thi.ng/checks": "^3.9.5",
+    "@thi.ng/checks": "^3.10.0",
     "alea-random": "^6.0.1"
   },
   "devDependencies": {
