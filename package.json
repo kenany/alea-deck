@@ -58,7 +58,7 @@
     "@kenan/biome-config": "1.0.6",
     "conventional-changelog-conventionalcommits": "9.3.1",
     "semantic-release": "25.0.5",
-    "tsdown": "0.22.2",
+    "tsdown": "0.22.3",
     "typescript": "6.0.3",
     "vitest": "4.1.9"
   }
