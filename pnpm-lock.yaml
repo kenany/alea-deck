@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@thi.ng/checks':
-        specifier: ^3.10.1
-        version: 3.10.1
+        specifier: ^3.11.0
+        version: 3.11.0
       alea-random:
         specifier: ^6.0.2
         version: 6.0.2
@@ -366,8 +366,8 @@ packages:
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
-  '@thi.ng/checks@3.10.1':
-    resolution: {integrity: sha512-824K6opNxMY0+ZDBHipFXgVEzARX/C/OwcAIJc02vZ/JdawuxxL6HVpOST3beQtco8zr5UQDs6Pl+F3GNSBdVA==}
+  '@thi.ng/checks@3.11.0':
+    resolution: {integrity: sha512-EE1vKsB3kqq+cTCLCdGlmeBGx0xp0G0v9385y3CEZgATMfFYyWRxFQdgjYE5UjQlP/YgWjvQqYGhzTpnObp9LA==}
     engines: {node: '>=18'}
 
   '@tybys/wasm-util@0.10.3':
@@ -2399,7 +2399,7 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
-  '@thi.ng/checks@3.10.1': {}
+  '@thi.ng/checks@3.11.0': {}
 
   '@tybys/wasm-util@0.10.3':
     dependencies:
