@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       '@thi.ng/checks':
-        specifier: ^3.11.0
+        specifier: ^3.11.1
         version: 3.11.1
       alea-random:
         specifier: ^6.0.2
