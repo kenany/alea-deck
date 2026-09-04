@@ -12,7 +12,7 @@ importers:
         specifier: ^3.11.1
         version: 3.11.1
       alea-random:
-        specifier: ^6.0.2
+        specifier: ^6.0.3
         version: 6.0.3
     devDependencies:
       '@biomejs/biome':
