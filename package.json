@@ -50,7 +50,7 @@
   },
   "dependencies": {
     "@thi.ng/checks": "^3.11.1",
-    "alea-random": "^6.0.2"
+    "alea-random": "^6.0.3"
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.11",
