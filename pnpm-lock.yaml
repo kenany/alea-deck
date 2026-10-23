@@ -12,8 +12,8 @@ importers:
         specifier: ^3.11.1
         version: 3.11.1
       alea-random:
-        specifier: ^6.0.3
-        version: 6.0.3
+        specifier: ^6.0.4
+        version: 6.0.4
     devDependencies:
       '@biomejs/biome':
         specifier: 2.5.15
@@ -589,8 +589,8 @@ packages:
     resolution: {integrity: sha512-1m4/ydbOGBbHTtBYa4/ISQcqfPdZAxQLzj71wM71T8lP4ktez8lcsVolvscrujQW4CJr/LJSzoZ6mcfnqzYQ3A==}
     engines: {node: '>=18'}
 
-  alea-random@6.0.3:
-    resolution: {integrity: sha512-ZSx6XwlFhKAk8n5KUBtrjbUibHfA9P96ye+9J71LTY9orPOYFnDvv7aMK971b0CU3hVJVy0/9R7IrSV3oC8VaQ==}
+  alea-random@6.0.4:
+    resolution: {integrity: sha512-KoDbUR+5+5BuORJ6yw6sjtjoWe5O2xTwzSaOWjyHc1KpCt62m6O7WmPOch97O2kkLZnkZqN56YINo7lhvPSisg==}
     engines: {node: 22 || >=24}
 
   alea@1.0.1:
@@ -2434,7 +2434,7 @@ snapshots:
       clean-stack: 5.3.0
       indent-string: 5.0.0
 
-  alea-random@6.0.3:
+  alea-random@6.0.4:
     dependencies:
       alea: 1.0.1
       lodash._isiterateecall: 3.0.9
