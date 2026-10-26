@@ -6,7 +6,7 @@ Uniform and weighted shuffling and sampling, just like
 
 ## Example
 
-``` javascript
+```javascript
 import { shuffle, pick } from 'alea-deck';
 
 shuffle([1, 2, 3, 4]);
@@ -20,7 +20,7 @@ shuffle({
   b: 8,
   c: 2,
   d: 1,
-  e: 1
+  e: 1,
 });
 // => ['b', 'a', 'c', 'd', 'e']
 
@@ -29,20 +29,20 @@ pick({
   b: 8,
   c: 2,
   d: 1,
-  e: 1
+  e: 1,
 });
 // => a
 ```
 
 ## Installation
 
-``` bash
+```bash
 $ npm install alea-deck
 ```
 
 ## API
 
-``` javascript
+```javascript
 import { deck, shuffle, pick, normalize } from 'alea-deck';
 ```
 
@@ -51,11 +51,11 @@ import { deck, shuffle, pick, normalize } from 'alea-deck';
 Binds `shuffle` and `pick` to `collection`, returning an object with both
 methods pre-applied.
 
-``` javascript
+```javascript
 const d = deck([1, 2, 3, 4]);
 
 d.shuffle(); // => [3, 1, 4, 2]
-d.pick();    // => 3
+d.pick(); // => 3
 ```
 
 ### `shuffle(collection)`
